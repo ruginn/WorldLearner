@@ -8,9 +8,9 @@ export default function Map() {
     return <div>hello</div>;
   }
 
-  //   useEffect(() => {
-  //     console.log(stateCode[Math.floor(Math.random() * stateCode.length)]);
-  //   }, []);
+  useEffect(() => {
+    console.log(stateCode[Math.floor(Math.random() * stateCode.length)]);
+  }, []);
 
   const printer = (state: string | null) => {
     console.log(state);
