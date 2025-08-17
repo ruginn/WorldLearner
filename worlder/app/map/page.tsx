@@ -10,12 +10,9 @@ export default function Map() {
 
   useEffect(() => {
     console.log(stateCode[Math.floor(Math.random() * stateCode.length)]);
-  });
+  }, []);
 
-  const printer = (
-    state: string | null,
-    selectedStates?: string[] | undefined
-  ) => {
+  const printer = (state: string | null) => {
     console.log(state);
   };
 
@@ -34,7 +31,7 @@ export default function Map() {
     };
   }, []);
 
-  const hinter = true;
+  //   const hinter = true;
 
   return (
     <div className='flex flex-col justify-center items-center w-full bg-blue-400'>
